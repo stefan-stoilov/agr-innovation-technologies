@@ -1,0 +1,3 @@
+.promo-card:hover .promo-card-image {
+  transform: scale(1.3);
+}
