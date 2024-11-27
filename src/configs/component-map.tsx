@@ -11,6 +11,11 @@ export const componentMap: ComponentMap = {
   imageSection: dynamic(() => import("@/components/sections/image-section")),
   cardsSection: dynamic(() => import("@/components/sections/cards-section")),
   hero: dynamic(() => import("@/components/sections/hero")),
+  faqSection: dynamic(() => import("@/components/sections/faq-section")),
+  stickySideFeatures: dynamic(() => import("@/components/sections/sticky-side-features")),
+  partnersSection: dynamic(() => import("@/components/sections/partners-section")),
+  numbersSection: dynamic(() => import("@/components/sections/numbers-section")),
+  stepsSection: dynamic(() => import("@/components/sections/steps-section")),
 };
 
 export default componentMap;

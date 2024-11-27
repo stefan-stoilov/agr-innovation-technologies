@@ -59,6 +59,14 @@
   }
 }
 
+.gradient-primary {
+  background-image: linear-gradient(
+    135deg,
+    rgba(34, 197, 94, 1) 0%,
+    rgba(11, 126, 53, 1) 100%
+  );
+}
+
 @layer base {
   * {
     @apply border-border;

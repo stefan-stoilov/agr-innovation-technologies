@@ -7,3 +7,8 @@ export type { ImagesCarouselProps } from "../images-carousel";
 export type { ImageSectionProps } from "../image-section";
 export type { CardsSectionProps } from "../cards-section";
 export type { HeroProps } from "../hero";
+export type { FaqSectionProps } from "../faq-section";
+export type { StickySideFeaturesProps } from "../sticky-side-features";
+export type { PartnersSectionProps } from "../partners-section";
+export type { NumbersSectionProps } from "../numbers-section";
+export type { StepsSectionProps } from "../steps-section";

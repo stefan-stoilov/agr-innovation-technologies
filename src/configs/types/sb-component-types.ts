@@ -9,6 +9,11 @@ import type {
   ImageSectionProps,
   CardsSectionProps,
   HeroProps,
+  FaqSectionProps,
+  StickySideFeaturesProps,
+  PartnersSectionProps,
+  NumbersSectionProps,
+  StepsSectionProps,
 } from "@/components/sections/types";
 
 export type SbComponentProps =
@@ -20,7 +25,12 @@ export type SbComponentProps =
   | ImagesCarouselProps
   | ImageSectionProps
   | CardsSectionProps
-  | HeroProps;
+  | HeroProps
+  | FaqSectionProps
+  | StickySideFeaturesProps
+  | PartnersSectionProps
+  | NumbersSectionProps
+  | StepsSectionProps;
 
 export type SbComponentKey = SbComponentProps["component"];
 

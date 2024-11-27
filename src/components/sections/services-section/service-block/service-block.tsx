@@ -30,18 +30,13 @@ export function ServiceBlock({
     <div
       {...storyblokEditable(props)}
       className={cn(
-        "flex flex-col-reverse flex-nowrap items-start gap-5",
+        "flex flex-col-reverse flex-nowrap items-start gap-5 rounded-lg p-0 md:bg-muted md:p-4",
         desktopImagePosition === "right"
           ? "md:flex-row"
           : "md:flex-row-reverse",
       )}
     >
-      <div
-        className={cn(
-          "flex w-full flex-col gap-3",
-          hasSbImage(image) && "md:w-8/12",
-        )}
-      >
+      <div className={cn("flex flex-1 flex-col gap-3")}>
         <p className={t.h2}>{title}</p>
         {subtitle && <p className={t.h4}>{subtitle}</p>}
         {description && (
@@ -52,7 +47,7 @@ export function ServiceBlock({
       </div>
 
       {hasSbImage(image) && (
-        <div className="relative aspect-square w-4/12 max-w-[300px] flex-shrink-0 overflow-hidden rounded-[50%]">
+        <div className="relative aspect-video w-full flex-1 overflow-hidden rounded-md md:w-[unset]">
           <Image
             src={image.filename}
             alt={image.alt}
