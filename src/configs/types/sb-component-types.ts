@@ -14,6 +14,7 @@ import type {
   PartnersSectionProps,
   NumbersSectionProps,
   StepsSectionProps,
+  GridStepsProps,
 } from "@/components/sections/types";
 
 export type SbComponentProps =
@@ -30,7 +31,8 @@ export type SbComponentProps =
   | StickySideFeaturesProps
   | PartnersSectionProps
   | NumbersSectionProps
-  | StepsSectionProps;
+  | StepsSectionProps
+  | GridStepsProps;
 
 export type SbComponentKey = SbComponentProps["component"];
 

@@ -4,11 +4,8 @@ import { storyblokEditable } from "@storyblok/react/rsc";
 import { cn } from "@/lib/utils";
 
 export function VerticalSteps({ steps }: { steps: StepProps[] }) {
-  steps.forEach((step) => {
-    console.log(step.icon);
-  });
   return (
-    <ul className="mx-auto mt-16 max-w-md ">
+    <ul className="mx-auto mt-16 max-w-md">
       {steps.map(({ title, description, icon, ...props }, i) => (
         <li
           key={i}
