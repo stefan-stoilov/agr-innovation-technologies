@@ -11,6 +11,22 @@ const iconMap = {
   unplug: dynamic(() => import("lucide-react").then((mod) => mod.Unplug)),
   "plug-zap": dynamic(() => import("lucide-react").then((mod) => mod.PlugZap)),
   recycle: dynamic(() => import("lucide-react").then((mod) => mod.Recycle)),
+  sun: dynamic(() => import("lucide-react").then((mod) => mod.Sun)),
+  map: dynamic(() => import("lucide-react").then((mod) => mod.Map)),
+  pill: dynamic(() => import("lucide-react").then((mod) => mod.Pill)),
+  binary: dynamic(() => import("lucide-react").then((mod) => mod.Binary)),
+  plane: dynamic(() => import("lucide-react").then((mod) => mod.Plane)),
+  droplet: dynamic(() => import("lucide-react").then((mod) => mod.Droplet)),
+  database: dynamic(() => import("lucide-react").then((mod) => mod.Database)),
+  microscope: dynamic(() => import("lucide-react").then((mod) => mod.Microscope)),
+  percent: dynamic(() => import("lucide-react").then((mod) => mod.Percent)),
+  "flask-conical": dynamic(() => import("lucide-react").then((mod) => mod.FlaskConical)),
+  radio: dynamic(() => import("lucide-react").then((mod) => mod.Radio)),
+  info: dynamic(() => import("lucide-react").then((mod) => mod.Info)),
+  video: dynamic(() => import("lucide-react").then((mod) => mod.Video)),
+  activity: dynamic(() => import("lucide-react").then((mod) => mod.Activity)),
+  "scan-eye": dynamic(() => import("lucide-react").then((mod) => mod.ScanEye)),
+  "scan-search": dynamic(() => import("lucide-react").then((mod) => mod.ScanSearch)),
 };
 
 export type IconProps = {

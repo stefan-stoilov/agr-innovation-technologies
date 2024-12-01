@@ -23,7 +23,7 @@ export function VerticalSteps({ steps }: { steps: StepProps[] }) {
           )}
 
           <div className="relative flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full bg-foreground">
-            <Icon name={icon[0].name} className="h-10 w-10 text-primary" />
+            <Icon name={icon[0].name} className="h-8 w-8 text-primary" />
           </div>
           <div className="ml-6">
             <h3 className="text-lg font-semibold text-foreground">{title}</h3>
