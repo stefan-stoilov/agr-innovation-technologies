@@ -4,10 +4,10 @@ import { cn } from "@/lib/utils";
  * Typography styles for various HTML elements.
  */
 export const typography = {
-  h1: "scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl",
-  h2: "scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0",
-  h3: "scroll-m-20 text-2xl font-semibold tracking-tight",
-  h4: "scroll-m-20 text-xl font-semibold tracking-tight",
+  h1: "text-4xl font-bold leading-tight text-foreground sm:text-5xl xl:text-6xl",
+  h2: "text-3xl font-bold leading-tight text-foreground sm:text-4xl xl:text-5xl",
+  h3: "text-xl font-bold leading-tight text-foreground sm:text-2xl xl:text-3xl",
+  h4: "text-lg font-bold leading-tight text-foreground  xl:text-xl",
   p: "leading-7 [&:not(:first-child)]:mt-6",
   lead: "text-xl text-muted-foreground",
   large: "text-lg font-semibold",

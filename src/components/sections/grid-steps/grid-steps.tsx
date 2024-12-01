@@ -1,5 +1,6 @@
 import { storyblokEditable, type SbBlokData } from "@storyblok/react/rsc";
 import { Icon, type IconProps } from "@/components/ui/icon";
+import { H2 } from "@/components/ui/typography";
 import { cn } from "@/lib/utils";
 
 export type GridStepsProps = {
@@ -26,9 +27,9 @@ export function GridSteps({
     <section {...storyblokEditable(props)} className="container bg-background">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-3xl font-bold leading-tight text-foreground sm:text-4xl xl:text-5xl">
+          <H2 className="text-3xl font-bold leading-tight text-foreground sm:text-4xl xl:text-5xl">
             {title}
-          </h2>
+          </H2>
           {description && (
             <p className="text-foreground-muted mt-4 text-base leading-7 sm:mt-8">
               {description}

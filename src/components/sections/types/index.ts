@@ -13,3 +13,4 @@ export type { PartnersSectionProps } from "../partners-section";
 export type { NumbersSectionProps } from "../numbers-section";
 export type { StepsSectionProps } from "../steps-section";
 export type { GridStepsProps } from "../grid-steps";
+export type { ProductProps } from "../product";

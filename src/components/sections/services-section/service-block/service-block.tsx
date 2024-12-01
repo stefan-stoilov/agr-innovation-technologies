@@ -37,7 +37,7 @@ export function ServiceBlock({
       )}
     >
       <div className={cn("flex flex-1 flex-col gap-3")}>
-        <p className={t.h2}>{title}</p>
+        <p className={t.h3}>{title}</p>
         {subtitle && <p className={t.h4}>{subtitle}</p>}
         {description && (
           <div className="mt-4 text-muted-foreground">

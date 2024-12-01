@@ -1,4 +1,5 @@
 import { storyblokEditable, type SbBlokData } from "@storyblok/react/rsc";
+import { H1 } from "@/components/ui/typography";
 
 export type HeroProps = {
   component: "hero";
@@ -22,9 +23,9 @@ export function Hero({ title, subtitle, ...props }: HeroProps) {
       <div className="flex flex-col divide-y divide-border pt-[35px]">
         <div>
           <div className="mx-auto flex min-h-[288px] max-w-[80vw] shrink-0 flex-col items-center justify-center gap-2 px-2 py-4 sm:px-16 lg:px-24">
-            <h1 className="max-w-screen-lg text-pretty text-center text-[clamp(32px,7vw,64px)] font-medium leading-none tracking-[-1.44px] md:tracking-[-2.16px]">
+            <H1 className="max-w-screen-lg text-pretty text-center text-[clamp(32px,7vw,64px)]">
               {title}
-            </h1>
+            </H1>
 
             <p className="text-md max-w-2xl text-pretty text-center text-muted-foreground md:text-lg">
               {subtitle}

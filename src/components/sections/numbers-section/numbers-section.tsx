@@ -1,4 +1,5 @@
 import { storyblokEditable, type SbBlokData } from "@storyblok/react/rsc";
+import { H2 } from "@/components/ui/typography";
 
 export type NumbersSectionProps = {
   component: "numbersSection";
@@ -26,9 +27,9 @@ export function NumbersSection({
     >
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold leading-tight text-foreground sm:text-4xl lg:text-5xl">
+          <H2 className="text-3xl font-bold leading-tight text-foreground sm:text-4xl lg:text-5xl">
             {title}
-          </h2>
+          </H2>
           {description && (
             <p className="mt-3 text-xl leading-relaxed text-foreground/90 md:mt-8">
               {description}

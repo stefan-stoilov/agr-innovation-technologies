@@ -22,7 +22,7 @@ export function FaqSection({ title, questions, ...props }: FaqSectionProps) {
   return (
     <section {...storyblokEditable(props)} className="container">
       <div className="container">
-        <H2>{title}</H2>
+        <H2 className="mb-8 text-center">{title}</H2>
         {questions.map((q, index) => (
           <Accordion key={index} type="single" collapsible>
             <AccordionItem value={`item-${index}`}>

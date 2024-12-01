@@ -20,7 +20,7 @@ export function StickySideFeatures({
       className="container relative grid grid-cols-1 gap-12 md:grid-cols-2"
       {...storyblokEditable(props)}
     >
-      <div className="sticky top-0 h-fit">
+      <div className="h-fit md:sticky md:top-8">
         <H2>{title}</H2>
         <Paragraph>{description}</Paragraph>
       </div>
