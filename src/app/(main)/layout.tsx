@@ -6,6 +6,7 @@ import { ThemeSwitcher } from "@/components/ui/theme-switcher";
 import "@/styles/globals.css";
 
 import { GeistSans } from "geist/font/sans";
+import { Footer } from "@/components/global/footer";
 
 export const metadata = {
   title: "AGR Innovation Technologies",
@@ -33,6 +34,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
+          <Footer />
           <div className="fixed bottom-4 right-4 md:bottom-[unset] md:top-4">
             <ThemeSwitcher />
           </div>

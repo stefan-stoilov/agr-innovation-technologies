@@ -26,7 +26,7 @@ export function FaqSection({ title, questions, ...props }: FaqSectionProps) {
         {questions.map((q, index) => (
           <Accordion key={index} type="single" collapsible>
             <AccordionItem value={`item-${index}`}>
-              <AccordionTrigger className="hover:text-foreground/60 hover:no-underline">
+              <AccordionTrigger className="hover:text-primary hover:no-underline">
                 {q.question}
               </AccordionTrigger>
               <AccordionContent>{q.answer}</AccordionContent>

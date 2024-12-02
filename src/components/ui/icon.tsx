@@ -21,6 +21,7 @@ const iconMap = {
   microscope: dynamic(() => import("lucide-react").then((mod) => mod.Microscope)),
   percent: dynamic(() => import("lucide-react").then((mod) => mod.Percent)),
   "flask-conical": dynamic(() => import("lucide-react").then((mod) => mod.FlaskConical)),
+  "flask-conical-off": dynamic(() => import("lucide-react").then((mod) => mod.FlaskConicalOff)),
   radio: dynamic(() => import("lucide-react").then((mod) => mod.Radio)),
   info: dynamic(() => import("lucide-react").then((mod) => mod.Info)),
   video: dynamic(() => import("lucide-react").then((mod) => mod.Video)),
