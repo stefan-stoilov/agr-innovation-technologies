@@ -18,6 +18,7 @@ export const componentMap: ComponentMap = {
   stepsSection: dynamic(() => import("@/components/sections/steps-section")),
   gridSteps: dynamic(() => import("@/components/sections/grid-steps")),
   product: dynamic(() => import("@/components/sections/product")),
+  contact: dynamic(() => import("@/components/sections/contact")),
 };
 
 export default componentMap;

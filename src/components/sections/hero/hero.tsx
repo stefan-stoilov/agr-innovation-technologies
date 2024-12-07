@@ -1,17 +1,19 @@
 import { storyblokEditable, type SbBlokData } from "@storyblok/react/rsc";
 import { H1 } from "@/components/ui/typography";
+import { cn } from "@/lib/utils";
 
 export type HeroProps = {
   component: "hero";
   title: string;
   subtitle: string;
+  reducedPadding?: boolean;
 } & SbBlokData;
 
-export function Hero({ title, subtitle, ...props }: HeroProps) {
+export function Hero({ title, subtitle, reducedPadding, ...props }: HeroProps) {
   return (
     <section
       {...storyblokEditable(props)}
-      className="relative overflow-hidden pb-10"
+      className={cn("relative overflow-hidden", !reducedPadding && "pb-10")}
     >
       <div
         style={{

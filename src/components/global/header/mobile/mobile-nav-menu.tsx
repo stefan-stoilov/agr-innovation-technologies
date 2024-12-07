@@ -3,7 +3,12 @@ import type { NavMenuItemProps, NavMenuProps } from "../types";
 import type { SbLink } from "@/configs/types";
 
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+  SheetClose,
+} from "@/components/ui/sheet";
 import {
   Accordion,
   AccordionContent,
@@ -113,9 +118,11 @@ function ListItem({ link, children }: LinkItemProps) {
 
   return mappedLink ? (
     <li>
-      <Link className="flex flex-col gap-1 px-2 py-3" {...mappedLink}>
-        {children}
-      </Link>
+      <SheetClose asChild>
+        <Link className="flex flex-col gap-1 px-2 py-3" {...mappedLink}>
+          {children}
+        </Link>
+      </SheetClose>
     </li>
   ) : (
     <li className="flex flex-col gap-1 px-2 py-3">{children}</li>
@@ -126,9 +133,11 @@ function LinkItem({ link, children }: LinkItemProps) {
   const mappedLink = mapSbLink(link);
 
   return mappedLink ? (
-    <Link className="flex flex-col gap-1 py-3" {...mappedLink}>
-      {children}
-    </Link>
+    <SheetClose asChild>
+      <Link className="flex flex-col gap-1 py-3" {...mappedLink}>
+        {children}
+      </Link>
+    </SheetClose>
   ) : (
     <p className="flex flex-col gap-1 py-3">{children}</p>
   );
