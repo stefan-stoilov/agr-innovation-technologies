@@ -7,6 +7,8 @@ import "@/styles/globals.css";
 
 import { GeistSans } from "geist/font/sans";
 import { Footer } from "@/components/global/footer";
+import { Header, type HeaderProps } from "@/components/global/header";
+import { getStory } from "@/lib/storyblok";
 
 export const metadata = {
   title: "AGR Innovation Technologies",
@@ -19,11 +21,15 @@ storyblokInit({
   use: [apiPlugin],
 });
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const [headerData] = await Promise.all([getStory(`global/header`)]);
+
+  const headerContent = headerData.data.story.content as unknown as HeaderProps;
+
   return (
     <html lang="bg" className={`${GeistSans.variable}`}>
       <body>
@@ -33,11 +39,12 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <Header {...headerContent} />
           {children}
           <Footer />
-          <div className="fixed bottom-4 right-4 md:bottom-[unset] md:top-4">
+          {/* <div className="fixed bottom-4 right-4 md:bottom-[unset] md:top-4">
             <ThemeSwitcher />
-          </div>
+          </div> */}
         </ThemeProvider>
       </body>
       <StoryblokBridgeLoader options={{}} />
