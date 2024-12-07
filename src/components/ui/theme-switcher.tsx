@@ -22,13 +22,13 @@ export function ThemeSwitcher() {
       >
         <Sun color="currentColor" height={16} width={16} />
       </SwitchButton>
-      <SwitchButton
+      {/* <SwitchButton
         selectedTheme={selectedTheme}
         setTheme={setTheme}
         theme="system"
       >
         <Laptop color="currentColor" height={16} width={16} />
-      </SwitchButton>
+      </SwitchButton> */}
       <SwitchButton
         selectedTheme={selectedTheme}
         setTheme={setTheme}

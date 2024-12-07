@@ -2,7 +2,7 @@ import { storyblokEditable, type SbBlokData } from "@storyblok/react/rsc";
 import type { NavMenuProps } from "./types";
 import { NavMenuDesktop } from "./desktop";
 import { NavMenuMobile } from "./mobile";
-import { Logo } from "./logo/logo";
+import { Logo } from "./logo";
 import { ThemeSwitcher } from "@/components/ui/theme-switcher";
 
 export type HeaderProps = {
@@ -18,7 +18,7 @@ export function Header({ title, description, menus, ...props }: HeaderProps) {
         <Logo />
         <NavMenuMobile title={title} description={description} menus={menus} />
         <NavMenuDesktop title={title} description={description} menus={menus} />
-        <div className="absolute bottom-0 right-0 top-0 hidden items-center md:flex">
+        <div className="absolute bottom-0 right-4 top-0 hidden items-center md:flex">
           <div>
             <ThemeSwitcher />
           </div>

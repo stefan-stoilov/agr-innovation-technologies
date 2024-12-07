@@ -1,14 +1,14 @@
 import { env } from "@/env";
 import { storyblokInit, apiPlugin } from "@storyblok/react/rsc";
+import { getStory } from "@/lib/storyblok";
 import StoryblokBridgeLoader from "@storyblok/react/bridge-loader";
-import { ThemeProvider } from "@/components/providers";
-import { ThemeSwitcher } from "@/components/ui/theme-switcher";
-import "@/styles/globals.css";
 
+import "@/styles/globals.css";
 import { GeistSans } from "geist/font/sans";
+import { ThemeProvider } from "@/components/providers";
+
 import { Footer } from "@/components/global/footer";
 import { Header, type HeaderProps } from "@/components/global/header";
-import { getStory } from "@/lib/storyblok";
 
 export const metadata = {
   title: "AGR Innovation Technologies",
@@ -28,23 +28,22 @@ export default async function RootLayout({
 }) {
   const [headerData] = await Promise.all([getStory(`global/header`)]);
 
-  const headerContent = headerData.data.story.content as unknown as HeaderProps;
+  const headerContent = headerData
+    ? (headerData.data.story.content as unknown as HeaderProps)
+    : null;
 
   return (
     <html lang="bg" className={`${GeistSans.variable}`}>
       <body>
         <ThemeProvider
           attribute="class"
-          defaultTheme="light"
+          defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          <Header {...headerContent} />
+          {headerContent && <Header {...headerContent} />}
           {children}
           <Footer />
-          {/* <div className="fixed bottom-4 right-4 md:bottom-[unset] md:top-4">
-            <ThemeSwitcher />
-          </div> */}
         </ThemeProvider>
       </body>
       <StoryblokBridgeLoader options={{}} />
