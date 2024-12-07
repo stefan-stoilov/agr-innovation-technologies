@@ -20,6 +20,7 @@ const iconMap = {
   database: dynamic(() => import("lucide-react").then((mod) => mod.Database)),
   microscope: dynamic(() => import("lucide-react").then((mod) => mod.Microscope)),
   percent: dynamic(() => import("lucide-react").then((mod) => mod.Percent)),
+  weight: dynamic(() => import("lucide-react").then((mod) => mod.Weight)),
   "flask-conical": dynamic(() => import("lucide-react").then((mod) => mod.FlaskConical)),
   "flask-conical-off": dynamic(() => import("lucide-react").then((mod) => mod.FlaskConicalOff)),
   radio: dynamic(() => import("lucide-react").then((mod) => mod.Radio)),
@@ -28,6 +29,9 @@ const iconMap = {
   activity: dynamic(() => import("lucide-react").then((mod) => mod.Activity)),
   "scan-eye": dynamic(() => import("lucide-react").then((mod) => mod.ScanEye)),
   "scan-search": dynamic(() => import("lucide-react").then((mod) => mod.ScanSearch)),
+  "shield-check": dynamic(() => import("lucide-react").then((mod) => mod.ShieldCheck)),
+  "audio-lines": dynamic(() => import("lucide-react").then((mod) => mod.AudioLines)),
+  "sun-snow": dynamic(() => import("lucide-react").then((mod) => mod.SunSnow)),
 };
 
 export type IconProps = {
