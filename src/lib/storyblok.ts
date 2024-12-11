@@ -63,6 +63,8 @@ export async function getStory(
 
 export const excludedStorySlugs = new Set([
   "home",
+  "header",
+  "footer",
   "global/header",
   "global/footer",
 ]);

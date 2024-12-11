@@ -23,7 +23,11 @@ export function ServicesSection({
       {(title || description) && (
         <div className="mx-auto flex w-full flex-col items-center">
           {title && <H2>{title}</H2>}
-          {description && <Paragraph>{description}</Paragraph>}
+          {description && (
+            <Paragraph className="max-w-screen-lg text-center">
+              {description}
+            </Paragraph>
+          )}
         </div>
       )}
       {services.map((service, i) => (

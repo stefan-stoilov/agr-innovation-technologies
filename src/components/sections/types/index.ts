@@ -15,3 +15,4 @@ export type { StepsSectionProps } from "../steps-section";
 export type { GridStepsProps } from "../grid-steps";
 export type { ProductProps } from "../product";
 export type { ContactProps } from "../contact";
+export type { CtaSectionProps } from "../cta-section";
