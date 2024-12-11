@@ -22,7 +22,7 @@ export function ServicesSection({
     >
       {(title || description) && (
         <div className="mx-auto flex w-full flex-col items-center">
-          {title && <H2>{title}</H2>}
+          {title && <H2 className="text-center">{title}</H2>}
           {description && (
             <Paragraph className="max-w-screen-lg text-center">
               {description}

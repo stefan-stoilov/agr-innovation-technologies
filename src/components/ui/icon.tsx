@@ -32,6 +32,8 @@ const iconMap = {
   "shield-check": dynamic(() => import("lucide-react").then((mod) => mod.ShieldCheck)),
   "audio-lines": dynamic(() => import("lucide-react").then((mod) => mod.AudioLines)),
   "sun-snow": dynamic(() => import("lucide-react").then((mod) => mod.SunSnow)),
+  "graduation-cap": dynamic(() => import("lucide-react").then((mod) => mod.GraduationCap)),
+  "person-standing": dynamic(() => import("lucide-react").then((mod) => mod.PersonStanding)),
 };
 
 export type IconProps = {
